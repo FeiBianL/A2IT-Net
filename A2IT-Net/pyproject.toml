@@ -7,6 +7,7 @@ name = "a2it-net"
 version = "1.0.0"
 description = "Attribute-Aware Image-Tabular Network"
 readme = "README.md"
+license = "Apache-2.0"
 requires-python = ">=3.10"
 dependencies = [
     "numpy>=1.24",
