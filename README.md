@@ -165,3 +165,9 @@ Run the model and data-pipeline tests with:
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+
+Copyright 2026 A2IT-Net Authors.
