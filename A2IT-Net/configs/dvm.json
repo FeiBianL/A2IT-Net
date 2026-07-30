@@ -1,0 +1,57 @@
+{
+  "data": {
+    "metadata_path": "data/dvm/tip_protocol_metadata.csv",
+    "image_root": "data/dvm",
+    "image_column": "image_path",
+    "image_extension": "",
+    "patient_id_column": null,
+    "fold_column": "fold",
+    "split_column": "split",
+    "train_split_value": "train",
+    "validation_split_value": "val",
+    "test_split_value": "test",
+    "standardize_numerical": false,
+    "label_column": "Genmodel_ID",
+    "numerical_columns": [
+      "Wheelbase",
+      "Height",
+      "Width",
+      "Length",
+      "Adv_year",
+      "Adv_month",
+      "Reg_year",
+      "Runned_Miles",
+      "Price",
+      "Seat_num",
+      "Door_num",
+      "Entry_price",
+      "Engine_size"
+    ],
+    "categorical_columns": [
+      "Color",
+      "Bodytype",
+      "Gearbox",
+      "Fuel_type"
+    ]
+  },
+  "model": {
+    "num_classes": 286,
+    "image_size": 224,
+    "attribute_dim": 64,
+    "fusion_dim": 512,
+    "dropout": 0.3
+  },
+  "training": {
+    "epochs": 200,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.00001,
+    "warmup_fraction": 0.1,
+    "gradient_clip_norm": 1.0,
+    "early_stopping_patience": 50,
+    "selection_metric": "accuracy",
+    "use_amp": true,
+    "num_workers": 4,
+    "seed": 42
+  }
+}

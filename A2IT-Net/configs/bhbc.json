@@ -1,0 +1,47 @@
+{
+  "data": {
+    "metadata_path": "data/bhbc/metadata.xlsx",
+    "image_root": "data/bhbc/images",
+    "image_column": "Image_filename",
+    "image_extension": "",
+    "patient_id_column": "CaseID",
+    "standardize_numerical": true,
+    "label_column": "Classification",
+    "numerical_columns": [
+      "Pixel_size",
+      "Age"
+    ],
+    "categorical_columns": [
+      "Tissue_composition",
+      "Signs",
+      "Symptoms",
+      "Shape",
+      "Margin",
+      "Echogenicity",
+      "Posterior_features",
+      "Halo",
+      "Calcifications",
+      "Skin_thickening"
+    ]
+  },
+  "model": {
+    "num_classes": 2,
+    "image_size": 224,
+    "attribute_dim": 64,
+    "fusion_dim": 512,
+    "dropout": 0.3
+  },
+  "training": {
+    "epochs": 200,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.00001,
+    "warmup_fraction": 0.1,
+    "gradient_clip_norm": 1.0,
+    "early_stopping_patience": 50,
+    "selection_metric": "accuracy",
+    "use_amp": true,
+    "num_workers": 4,
+    "seed": 42
+  }
+}

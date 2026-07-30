@@ -1,0 +1,51 @@
+{
+  "data": {
+    "metadata_path": "data/brset/brset_curated.csv",
+    "image_root": "data/brset/images",
+    "image_column": "image_id",
+    "image_extension": ".jpg",
+    "patient_id_column": "patient_id",
+    "standardize_numerical": true,
+    "label_column": "DR_ICDR",
+    "label_mapping": {
+      "0": 0,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 2
+    },
+    "numerical_columns": [
+      "patient_age",
+      "diabetes_time_y"
+    ],
+    "categorical_columns": [
+      "insuline",
+      "patient_sex",
+      "exam_eye",
+      "diabetes",
+      "optic_disc",
+      "vessels",
+      "macula"
+    ]
+  },
+  "model": {
+    "num_classes": 3,
+    "image_size": 224,
+    "attribute_dim": 64,
+    "fusion_dim": 512,
+    "dropout": 0.3
+  },
+  "training": {
+    "epochs": 200,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.00001,
+    "warmup_fraction": 0.1,
+    "gradient_clip_norm": 1.0,
+    "early_stopping_patience": 50,
+    "selection_metric": "accuracy",
+    "use_amp": true,
+    "num_workers": 4,
+    "seed": 42
+  }
+}
