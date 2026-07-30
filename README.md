@@ -168,6 +168,6 @@ python -m unittest discover -s tests -v
 
 ## License
 
-This project is licensed under the Apache License 2.0. See the [./A2IT-Net/LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0. See the [LICENSE](A2IT-Net/LICENSE) file for details.
 
 Copyright 2026 A2IT-Net Authors.
