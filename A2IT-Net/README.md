@@ -1,6 +1,6 @@
 # A2IT-Net
 
-Official PyTorch implementation of **A2IT-Net (Attribute-Aware Image-Tabular Network)**, an end-to-end multimodal framework for joint representation learning from images and structured tabular data.
+Official PyTorch implementation of **A2IT-Net (Attribute-Aware Tabular Encoding and Gated Fusion for Image-Tabular Multimodal Diagnosis)**, an end-to-end multimodal framework for joint representation learning from images and structured tabular data.
 
 A2IT-Net preserves fine-grained attribute semantics during tabular encoding and integrates modality-specific and shared information through a two-stage decoupled fusion strategy.
 
